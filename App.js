@@ -170,7 +170,7 @@ function LaunchFinderApp() {
     ApplicationFinderPart2Container = document.getElementById(
       "ApplicationFinderPart2Container"
     );
-    ApplicationFinderPart2.style.overflow = "auto"
+    ApplicationFinderPart2.style.overflow = "auto";
     ApplicationFinderPart2Container.style.margin = "20px";
     // ApplicationFinderPart2Text1
     ApplicationFinderPart2Text1 = document.getElementById(
@@ -263,7 +263,7 @@ function LaunchFinderApp() {
 }
 function LaunchLaunchPadApp() {
   LaunchApplication("50%", "50%", "100%", "100%", "");
-  
+
   StatusBar.style.opacity = "0";
   Application.innerHTML = `
   <div id="LaunchPadList"></div>
@@ -2978,7 +2978,7 @@ function LaunchSettingsApp() {
     addEventListener("resize", SettingsApparencyResized);
 
     function SettingsApparencyResized() {
-      if (window.innerWidth <= 1750) {
+      if (window.innerWidth <= 1400) {
         SettingsApparencyList.style.display = "grid";
         SettingsApparencyList2.style.display = "grid";
         SettingsApparencyList2.style.gridTemplateColumns = "auto";
@@ -3271,7 +3271,7 @@ async function SystemShutdown() {
   window.location.replace("https://google.com");
 }
 function WindowResized() {
-  if (window.innerWidth <= 1650 ) {
+  if (window.innerWidth <= 1650) {
     App.style.height = "98%";
     App.style.width = "98%";
     App.style.top = "1%";
@@ -3283,10 +3283,10 @@ function WindowResized() {
     App.style.left = "5%";
   }
   if (window.innerWidth <= 1205) {
-      App.style.backgroundSize = (1 / window.innerWidth) * 120000 + "%";
-    } else {
-      App.style.backgroundSize = "100%";
-    }
+    App.style.backgroundSize = (1 / window.innerWidth) * 120000 + "%";
+  } else {
+    App.style.backgroundSize = "100%";
+  }
 
   if (window.innerWidth <= 1000 && StatusBarApplicationName.innerHTML != "") {
     Application.style.top = "47%";
@@ -3314,7 +3314,7 @@ function WindowResized() {
     DockSettingsIcon.style.removeProperty("position");
     DockSettingsIcon.style.height = "50px";
     DockSettingsIcon.style.removeProperty("zIndex");
-    }
+  }
 
   if (window.innerWidth <= 450) {
     DockMapsIcon.style.position = "absolute";
@@ -3353,8 +3353,6 @@ function WindowResized() {
     DockMailsIcon.style.removeProperty("position");
     DockMailsIcon.style.height = "50px";
     DockMailsIcon.style.removeProperty("zIndex");
-
-    
   }
 
   if (window.innerWidth <= 150) {
