@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+.StatusBarElements:active {
+  background-color: var(--buttonColor01);
+}
+.LaunchPadIcons:active,
+.DockIcons:active {
+  filter: contrast(0.6);
+}
+.RegularButton01:hover {
+  background-color: var(--buttonColor02);
+}
+
+*::-webkit-scrollbar {
+  height: 8px; /* width of the entire scrollbar */
+  width: 8px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--teamsElementColor01); /* color of the tracking area */
+  border-radius: 20px;
+  margin: 20px 0 20px 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--buttonColor02);
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: none;
+}
